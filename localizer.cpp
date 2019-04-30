@@ -39,7 +39,7 @@ using namespace std;
            0.25 0.25
            0.25 0.25
 */
-vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
+vector< vector <float> > initialize_beliefs(vector< vector <char> > &grid) {
 	int grid_h = grid.size();
 	int grid_w = grid[0].size();
 	vector< vector<float> > newGrid(grid_h, vector<float>(grid_w, 1.0f / ( grid_h * grid_w ) ));
@@ -84,7 +84,7 @@ vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
     @return - a normalized two dimensional grid of floats 
          representing the updated beliefs for the robot. 
 */
-vector< vector <float> > move(int dy, int dx, vector < vector <float> > beliefs, float blurring) 
+vector< vector <float> > move(int dy, int dx, vector < vector <float> > &beliefs, float blurring) 
 {
 	size_t  beliefs_h = beliefs.size();
 	size_t  beliefs_w = beliefs[0].size();
@@ -139,8 +139,8 @@ vector< vector <float> > move(int dy, int dx, vector < vector <float> > beliefs,
     @return - a normalized two dimensional grid of floats 
     	   representing the updated beliefs for the robot. 
 */
-vector< vector <float> > sense(char color, vector< vector <char> > grid, 
-							   vector< vector <float> > beliefs, float p_hit, float p_miss) 
+vector< vector <float> > sense(char color, vector< vector <char> > &grid, 
+							   vector< vector <float> > &beliefs, float p_hit, float p_miss) 
 {
 	size_t grid_h = grid.size();
 	size_t grid_w = grid[0].size();

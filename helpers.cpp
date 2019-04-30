@@ -43,7 +43,7 @@ inline int HELPERS_modulo(int input, int modulus)
     @return - a new normalized two dimensional grid where the sum of 
     	   all probabilities is equal to one.
 */
-vector< vector<float> > normalize(vector< vector <float> > grid) {
+vector< vector<float> > normalize(vector< vector <float> > &grid) {
 	size_t grid_h = grid.size();
 	size_t grid_c = grid[0].size();
 	vector< vector<float> > newGrid( grid_h, vector<float>(grid_c, 0) );
@@ -95,7 +95,7 @@ vector< vector<float> > normalize(vector< vector <float> > grid) {
     @return - a new normalized two dimensional grid where probability 
     	   has been blurred.
 */
-vector < vector <float> > blur(vector < vector < float> > grid, float blurring) {
+vector < vector <float> > blur(vector < vector < float> > &grid, float blurring) {
 	int grid_h = grid.size();
 	int grid_w = grid[0].size();
 
