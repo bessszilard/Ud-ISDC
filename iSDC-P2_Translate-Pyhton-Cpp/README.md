@@ -11,6 +11,8 @@ g++ tests.cpp
 ./a.out
 ```
 
+The project is written in [Visual Studio preview 2019](https://visualstudio.microsoft.com/vs/preview/).
+
 ### Evaluation
 
 Once you have completed your project, use the Project Rubric to review the project. If you have covered all of the points in the rubric, then you are ready to submit! If you see room for improvement in any category in which you do not meet specifications, keep working!
