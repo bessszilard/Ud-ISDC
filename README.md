@@ -15,21 +15,25 @@ Learn the framework that underlies a self-driving car’s understanding of itsel
 ## Part 3 - Working with Matrices
 
 This course will focus on two tools which are vital to self-driving car engineers: object oriented programming and linear algebra.
+
 ***Project: Implement a Matrix Class***
 
 ## Part 4 - C++ Basics
 
 This course is the first step in a rewarding journey towards C++ expertise. The goal is translation: get a program written in Python, and translate it into C++.
+
 ***Project: Translate Python to C++***
 
 ## Part 5 - Performance Programming in C++
 
 Explore how to write good code that runs correctly. We’ll focus primarily on low level features of C++, but we’ll discuss other best practices as well.
+
 ***Project: Optimize Histogram Filter***
 
 ## Part 6 - Navigating Data Structures
 
 Algorithmic thinking is a skill you’ll refine throughout your career. In this course you’ll focus on frequently used data structures and algorithms.
+
 ***Project: Implement Route Planner***
 
 
