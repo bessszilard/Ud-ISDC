@@ -24,3 +24,24 @@ g++ -std=c++11 main.cpp blur_improved.cpp initialize_beliefs_improved.cpp move_i
 g++ -std=c++11 -O3 main.cpp blur_improved.cpp initialize_beliefs_improved.cpp move_improved.cpp normalize_improved.cpp print.cpp sense_improved.cpp zeros_improved.cpp
 
 ### Results
+```
+number of iterations: 10000 
+duration milliseconds initialize beliefs 13.764
+duration milliseconds sense 16.164
+duration milliseconds blur 81.712
+duration milliseconds normalize 13.688
+duration milliseconds move 16.967
+```
+
+### Results with O3 optimization
+```
+g++ -std=c++11 -O3 main.cpp blur_improved.cpp initialize_beliefs_improved.cpp move_improved.cpp normalize_improved.cpp print.cpp sense_improved.cpp zeros_improved.cpp
+```
+
+```
+number of iterations: 10000   duration milliseconds initialize beliefs 1.685
+duration milliseconds sense 4.136
+duration milliseconds blur 30.062
+duration milliseconds normalize 1.513
+duration milliseconds move 2.21
+```
